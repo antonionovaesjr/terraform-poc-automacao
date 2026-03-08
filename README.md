@@ -30,6 +30,7 @@ No modules.
 | Name | Type |
 |------|------|
 | [null_resource.example](https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource) | resource |
+| [null_resource.example2](https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource) | resource |
 | [random_pet.example](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/pet) | resource |
 | [time_static.example](https://registry.terraform.io/providers/hashicorp/time/latest/docs/resources/static) | resource |
 

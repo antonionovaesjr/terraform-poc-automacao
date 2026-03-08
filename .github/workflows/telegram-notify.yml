@@ -2,30 +2,26 @@ name: Telegram Notification
 
 on:
   workflow_dispatch:
-  push:
-    tags:
-      - '*' # Dispara sempre que QUALQUER tag for enviada. Ex: v1.0.0
+  release:
+    types: [published]
 
 jobs:
   notify:
     name: Send Telegram Message
     runs-on: ubuntu-latest
     steps:
-      - name: Notify Telegram 
+      - name: Notify Telegram
         uses: appleboy/telegram-action@master
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
-          format: html
-          disable_web_page_preview: true # Evita que um card gigante do GitHub polua o chat
+          format: markdown
           message: |
-            🚀 <b>NOVA VERSÃO PUBLICADA!</b>
+            🚀 *Nova versão lançada!*
 
-            📦 <b>Projeto:</b> <code>${{ github.repository }}</code>
-            🏷️ <b>Tag:</b> <code>${{ github.ref_name }}</code>
-            👤 <b>Autor:</b> <a href="${{ github.server_url }}/${{ github.actor }}">${{ github.actor }}</a>            
+            O repositório *${{ github.repository }}* acaba de publicar a versão *${{ github.event.release.tag_name }}*.
 
-            📝 <b>O que há de novo (Changelog):</b>
-            <pre>${{ github.event.head_commit.message }}</pre>
+            📝 *Notas do Release:*
+            ${{ github.event.release.body }}
 
-            🔗 <a href="${{ github.server_url }}/${{ github.repository }}/releases/tag/${{ github.ref_name }}">Visualizar Tag no GitHub</a>
+            🔗 [Ver Release no GitHub](${{ github.event.release.html_url }})

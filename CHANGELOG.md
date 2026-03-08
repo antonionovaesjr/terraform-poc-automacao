@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/antonionovaesjr/terraform-poc-automacao/compare/v1.8.0...v1.8.1) (2026-03-08)
+
+
+### Bug Fixes
+
+* upgrade terraform core para v1.11.0 e providers ([f42f057](https://github.com/antonionovaesjr/terraform-poc-automacao/commit/f42f05722006a4dc5f635302f8c114635339d3f7))
+
 # [1.8.0](https://github.com/antonionovaesjr/terraform-poc-automacao/compare/v1.7.0...v1.8.0) (2026-03-08)
 
 

@@ -24,7 +24,7 @@ jobs:
             🏷️ <b>Versão:</b> <code>${{ github.event.release.tag_name }}</code>
             👤 <b>Autor:</b> <a href="${{ github.event.release.author.html_url }}">${{ github.event.release.author.login }}</a>
 
-            📝 <b>O que há de novo (Changelog):</b>
-            <pre>${{ github.event.release.body }}</pre>
+            📝 <b>O que há de novo:</b>
+            <p>${{ github.event.release.body }}</p>
 
             🔗 <a href="${{ github.event.release.html_url }}">Visualizar Release completa no GitHub</a>

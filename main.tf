@@ -22,3 +22,12 @@ resource "null_resource" "example" {
     random_id     = try(random_pet.example[0].id, "")
   }
 }
+
+resource "null_resource" "example2" {
+  count = var.create ? 1 : 0
+
+  triggers = {
+    resource_name = var.name
+    random_id     = try(random_pet.example[0].id, "")
+  }
+}

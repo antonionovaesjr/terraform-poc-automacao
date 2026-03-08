@@ -25,6 +25,6 @@ jobs:
             👤 <b>Autor:</b> <a href="${{ github.event.release.author.html_url }}">${{ github.event.release.author.login }}</a>
 
             📝 <b>O que há de novo:</b>
-            <p>${{ github.event.release.body }}</p>
+            <code>${{ github.event.release.body }}</code>
 
             🔗 <a href="${{ github.event.release.html_url }}">Visualizar Release completa no GitHub</a>

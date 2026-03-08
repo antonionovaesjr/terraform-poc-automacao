@@ -1,3 +1,11 @@
+# [1.3.0](https://github.com/antonionovaesjr/terraform-poc-automacao/compare/v1.2.0...v1.3.0) (2026-03-08)
+
+
+### Features
+
+* new resource ([2ebad4d](https://github.com/antonionovaesjr/terraform-poc-automacao/commit/2ebad4d2f7a296d1d2e05bf50614eece50c3abd9))
+* update random uuid ([4bbc163](https://github.com/antonionovaesjr/terraform-poc-automacao/commit/4bbc16395c4faaffc8b04e406b893335ff67fb85))
+
 # [1.2.0](https://github.com/antonionovaesjr/terraform-poc-automacao/compare/v1.1.0...v1.2.0) (2026-03-08)
 
 

@@ -30,5 +30,7 @@ jobs:
           extra_plugins: |
             @semantic-release/changelog
             @semantic-release/git
+            @semantic-release/exec
+            showdown
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_RELEASE }}

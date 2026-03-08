@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/antonionovaesjr/terraform-poc-automacao/compare/v1.8.1...v1.9.0) (2026-03-08)
+
+
+### Features
+
+* **release:** add HTML changelog generation ([6528588](https://github.com/antonionovaesjr/terraform-poc-automacao/commit/65285882672e89da47cd8ca1eb6daa056731858c))
+
 ## [1.8.1](https://github.com/antonionovaesjr/terraform-poc-automacao/compare/v1.8.0...v1.8.1) (2026-03-08)
 
 

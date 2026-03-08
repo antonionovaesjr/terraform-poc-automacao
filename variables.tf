@@ -14,14 +14,3 @@ variable "name" {
     error_message = "The name variable must not be empty or consist only of spaces."
   }
 }
-
-variable "description" {
-  description = "A description for the resources created by this module."
-  type        = string
-  default     = "This is an example resource created by Terraform."
-
-  validation {
-    condition     = length(trimspace(var.description)) > 0
-    error_message = "The description variable must not be empty or consist only of spaces."
-  }
-}

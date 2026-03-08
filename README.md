@@ -32,6 +32,7 @@ No modules.
 | [null_resource.example](https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource) | resource |
 | [null_resource.example2](https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource) | resource |
 | [random_pet.example](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/pet) | resource |
+| [random_string.name](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string) | resource |
 | [time_static.example](https://registry.terraform.io/providers/hashicorp/time/latest/docs/resources/static) | resource |
 
 ## Inputs
@@ -46,3 +47,4 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_is_created"></a> [is\_created](#output\_is\_created) | Whether the resources were created or not. |
+| <a name="output_resource_name"></a> [resource\_name](#output\_resource\_name) | The name assigned to the resources created by this module. |

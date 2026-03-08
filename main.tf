@@ -31,3 +31,10 @@ resource "null_resource" "example2" {
     random_id     = try(random_pet.example[0].id, "")
   }
 }
+
+resource "random_string" "name" {
+  length  = 16
+  special = false
+  count   = var.create ? 1 : 0
+}
+

@@ -39,6 +39,6 @@ resource "random_string" "name" {
 }
 
 
-resource "random_uuid4" "name" {
+resource "random_uuid" "name" {
   count = var.create ? 1 : 0
 }

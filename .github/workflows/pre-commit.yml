@@ -23,16 +23,13 @@ jobs:
         with:
           terraform_version: "latest"
 
-      - name: Install Tools
-        run: |
-          # Instalação do terraform-docs
-          curl -Lo ./terraform-docs.tar.gz https://github.com/terraform-docs/terraform-docs/releases/download/v0.17.0/terraform-docs-v0.17.0-$(uname)-amd64.tar.gz
-          tar -xzf terraform-docs.tar.gz
-          chmod +x terraform-docs
-          sudo mv terraform-docs /usr/local/bin/
+      - name: Setup TFLint
+        uses: terraform-linters/setup-tflint@v4
+        with:
+          tflint_version: latest
 
-          # Instalação do TFLint
-          curl -s https://raw.githubusercontent.com/terraform-linters/tflint/master/install_linux.sh | bash
+      - name: Setup terraform-docs
+        uses: terraform-docs/gh-actions@v1.3.0
 
       - name: Run pre-commit
         uses: pre-commit/action@v3.0.1

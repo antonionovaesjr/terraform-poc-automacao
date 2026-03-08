@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/antonionovaesjr/terraform-poc-automacao/compare/v1.3.1...v1.4.0) (2026-03-08)
+
+
+### Features
+
+* update workflow telegram ([e056738](https://github.com/antonionovaesjr/terraform-poc-automacao/commit/e056738a57223adae27899b35a2db69766341a93))
+
 # [1.3.0](https://github.com/antonionovaesjr/terraform-poc-automacao/compare/v1.2.0...v1.3.0) (2026-03-08)
 
 

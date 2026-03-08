@@ -15,13 +15,16 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
-          format: markdown
+          format: html
+          disable_web_page_preview: true # Evita que um card gigante do GitHub polua o chat
           message: |
-            🚀 *Nova versão lançada!*
+            🚀 <b>NOVA VERSÃO PUBLICADA!</b>
 
-            O repositório *${{ github.repository }}* acaba de publicar a versão *${{ github.event.release.tag_name }}*.
+            📦 <b>Projeto:</b> <code>${{ github.repository }}</code>
+            🏷️ <b>Versão:</b> <code>${{ github.event.release.tag_name }}</code>
+            👤 <b>Autor:</b> <a href="${{ github.event.release.author.html_url }}">${{ github.event.release.author.login }}</a>
 
-            📝 *Notas do Release:*
-            ${{ github.event.release.body }}
+            📝 <b>O que há de novo (Changelog):</b>
+            <pre>${{ github.event.release.body }}</pre>
 
-            🔗 [Ver Release no GitHub](${{ github.event.release.html_url }})
+            🔗 <a href="${{ github.event.release.html_url }}">Visualizar Release completa no GitHub</a>

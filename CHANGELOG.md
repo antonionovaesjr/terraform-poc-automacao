@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/antonionovaesjr/terraform-poc-automacao/compare/v1.4.1...v1.5.0) (2026-03-08)
+
+
+### Features
+
+* **telegram:** altera trigger para push de tags e formato para HTML ([3bcacf6](https://github.com/antonionovaesjr/terraform-poc-automacao/commit/3bcacf67e52cdf18132cccce2db174e88ed062eb))
+
 # [1.4.0](https://github.com/antonionovaesjr/terraform-poc-automacao/compare/v1.3.1...v1.4.0) (2026-03-08)
 
 

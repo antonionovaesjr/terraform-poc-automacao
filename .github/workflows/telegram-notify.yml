@@ -4,13 +4,16 @@ on:
   workflow_dispatch:
   release:
     types: [published]
+    branches:
+      - main
+      - master
 
 jobs:
   notify:
     name: Send Telegram Message
     runs-on: ubuntu-latest
     steps:
-      - name: Notify Telegram
+      - name: Notify Telegram 
         uses: appleboy/telegram-action@master
         with:
           to: ${{ secrets.TELEGRAM_TO }}

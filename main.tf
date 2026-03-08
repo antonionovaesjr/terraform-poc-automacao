@@ -38,3 +38,7 @@ resource "random_string" "name" {
   count   = var.create ? 1 : 0
 }
 
+
+resource "random_uuid" "name" {
+  count = var.create ? 1 : 0
+}

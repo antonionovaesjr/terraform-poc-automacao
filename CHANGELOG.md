@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/antonionovaesjr/terraform-poc-automacao/compare/v1.0.0...v1.1.0) (2026-03-08)
+
+
+### Features
+
+* add new functionaly ([7eb38f1](https://github.com/antonionovaesjr/terraform-poc-automacao/commit/7eb38f129fb7700f795791a7de59b31ebdacaa53))
+
 # 1.0.0 (2026-03-08)
 
 

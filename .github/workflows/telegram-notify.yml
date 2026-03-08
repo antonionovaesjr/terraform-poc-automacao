@@ -18,13 +18,13 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
-          format: markdown
+          format: html
           message: |
-            🚀 *Nova versão lançada!*
+            🚀 <b>Nova versão lançada!</b>
 
-            O repositório *${{ github.repository }}* acaba de publicar a versão *${{ github.event.release.tag_name }}*.
+            O repositório <b>${{ github.repository }}</b> acaba de publicar a versão <b>${{ github.event.release.tag_name }}</b>.
 
-            📝 *Notas do Release:*
+            📝 <b>Notas do Release:</b>
             ${{ github.event.release.body }}
 
-            🔗 [Ver Release no GitHub](${{ github.event.release.html_url }})
+            🔗 <a href="${{ github.event.release.html_url }}">Ver Release no GitHub</a>

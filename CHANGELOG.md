@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/antonionovaesjr/terraform-poc-automacao/compare/v1.7.0...v1.8.0) (2026-03-08)
+
+
+### Features
+
+* change changelog paragran ([ace1cd3](https://github.com/antonionovaesjr/terraform-poc-automacao/commit/ace1cd3e022e4c629ed9ca6f79c307d1c64a1cb3))
+
 # [1.7.0](https://github.com/antonionovaesjr/terraform-poc-automacao/compare/v1.6.0...v1.7.0) (2026-03-08)
 
 

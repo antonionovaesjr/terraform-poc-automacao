@@ -1,3 +1,11 @@
+# [1.7.0](https://github.com/antonionovaesjr/terraform-poc-automacao/compare/v1.6.0...v1.7.0) (2026-03-08)
+
+
+### Features
+
+* altera trigger para push de tags e formato para HTML ([30d2495](https://github.com/antonionovaesjr/terraform-poc-automacao/commit/30d24956cbaedb025c61decc3830d103fcd5c0db))
+* upgrade modeules ([758c40a](https://github.com/antonionovaesjr/terraform-poc-automacao/commit/758c40a64f0e2670c570ad071cf8cb6f25265aa5))
+
 # [1.6.0](https://github.com/antonionovaesjr/terraform-poc-automacao/compare/v1.5.0...v1.6.0) (2026-03-08)
 
 

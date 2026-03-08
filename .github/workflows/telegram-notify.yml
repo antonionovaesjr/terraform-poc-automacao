@@ -1,6 +1,7 @@
 name: Telegram Notification
 
 on:
+  workflow_dispatch:
   release:
     types: [published]
 
